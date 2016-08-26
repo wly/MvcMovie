@@ -60,7 +60,7 @@ namespace MvcMovie.Services
             }
             catch(Exception ex)
             {
-
+                System.Diagnostics.Debug.WriteLine("{0}:{1}", ex.Source, ex.Message);
                 return Task.FromResult(0);
             }            
         }
